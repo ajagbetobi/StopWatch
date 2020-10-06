@@ -1,9 +1,9 @@
 const submitBtn = document.querySelector("#submit");
 const resetBtn = document.querySelector("#reset");
 const timer = document.querySelector(".timer");
-let seconds = 60;
-
+let seconds;
 submitBtn.addEventListener("click", () => {
+  seconds = 60;
   let minutes = document.querySelector("#minutes").value;
   minutes--;
   console.log(minutes);
@@ -28,5 +28,8 @@ submitBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-  timer.textContent = `00 : 00`;
+  seconds = 0;
+  minutes = 0;
+  clearInterval(startWatch);
+  timer.textContent = `0${minutes} : 0${seconds}`;
 });

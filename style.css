@@ -12,11 +12,12 @@ main {
   display: flex;
   font-family: "Montserrat Alternates", sans-serif;
   background-color: rgb(49, 45, 45);
-  width: 50vw;
+  width: 70vw;
   height: 20vh;
   border-radius: 0.2rem;
   justify-content: center;
   align-items: center;
+  margin-top: 6rem;
 }
 
 .form {
