@@ -28,8 +28,6 @@ submitBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-  seconds = 0;
-  minutes = 0;
-  clearInterval(startWatch);
-  timer.textContent = `0${minutes} : 0${seconds}`;
+  location.reload();
+  return false;
 });
